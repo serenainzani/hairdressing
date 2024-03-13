@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./Navbar.js";
+import Carousel from "./Carousel.js";
+import MainButton from "./MainButton.js";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <nav>
+                <Navbar />
+            </nav>
+
+            <body>
+                <div>
+                    <h1>Lounge Salon</h1>
+                    <h2>Hair & Beauty</h2>
+                </div>
+
+                <Carousel />
+                <MainButton text="Book Now ✂️" />
+            </body>
+        </div>
+    );
 }
 
 export default App;
